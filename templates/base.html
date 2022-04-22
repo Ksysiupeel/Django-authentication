@@ -16,6 +16,11 @@
             <div class="container-fluid">
               <div>
                 <ul class="navbar-nav">
+                  {% if user.is_authenticated %}
+                  <li class="nav-item">
+                    <a class="nav-link" href="/logout">Logged in as {{ user.username }} || click to log out</a>
+                  </li>
+                  {% else %}
                   <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
                   </li>
@@ -25,6 +30,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="/register">Sign up</a>
                   </li>
+                  {% endif %}
                 </ul>
               </div>
             </div>

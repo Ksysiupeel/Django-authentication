@@ -138,5 +138,5 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 # Login settings
-LOGIN_REDIRECT_URL = "/home"
+LOGIN_REDIRECT_URL = "/user"
 LOGOUT_REDIRECT_URL = "/login"
